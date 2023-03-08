@@ -40,7 +40,7 @@ then
 fi
 
 # Check we have a valid BAND
-declare -a BANDS=( as_915_921, as_915_928, as_917_920, as_920_923, au_915_928, cn_470_510, eu_433, eu_863_870, in_865_867, kr_920_923, ru_864_870, us_902_928 )
+declare -a BANDS=( as_915_921, as_915_928, as_917_920, as_920_923, as_923_1, as_923_2, au_915_928, cn_470_510, eu_433, eu_863_870, in_865_867, kr_920_923, ru_864_870, us_902_928 )
 if [[ ! " ${BANDS[*]} " =~ "${BAND}" ]]; then
     echo -e "\033[91mERROR: Wrong BAND setting ($BAND).\033[0m"
 	idle
